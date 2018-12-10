@@ -210,7 +210,7 @@ standard_chart = Highcharts.chart('container', options); // Empty chart.
 function createTrinketChart(jsonFile, simType){
     $.getJSON("https://raw.githubusercontent.com/WarcraftPriests/bfa-shadow-priest/master/json_Charts/trinkets_DA_ST.json", function(data) {
         //console.log(data); // this will show the info it in firebug console
-    //$.getJSON("https://rawgit.com/WarcraftPriests/bfa-shadow-priest/master/json_Charts/traits_DA_C.json", function(data) {
+    //$.getJSON("https://cdn.jsdelivr.net/gh/WarcraftPriests/bfa-shadow-priest@master/json_Charts/traits_DA_C.json", function(data) {
         var sortedItems = [];
         var dpsSortedData = data["sorted_data_keys"];
         standard_chart.update({
